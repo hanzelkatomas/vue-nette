@@ -10,6 +10,7 @@ Zprovozneni Nette projektu
 Pro Vite:
 1. Dockerfile: CMD ["npm", "run", "dev"]
 2. package.json je treba upravit takhle:
+
 `"scripts": {
 	"dev": "vite --host",
 	"build": "vue-tsc --noEmit && vite build",
