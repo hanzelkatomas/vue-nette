@@ -1,0 +1,43 @@
+version: '3.6'
+
+services:
+  nette:
+    container_name: backend-nette
+    build: ./
+    volumes:
+      - ./backend:/var/www
+      - ./backend/www:/var/www/html
+    ports:
+      - "8002:80"
+
+  phpmyadmin:
+      image: phpmyadmin/phpmyadmin
+      container_name: phpMyAdmin-nette-vue
+      restart: always
+      ports:
+        - "8082:80"
+      volumes:
+        - /sessions
+
+  db:
+      image: mysql:8.0.28
+      restart: always
+      container_name: db-nette-vue
+      environment:
+        MYSQL_ROOT_PASSWORD: password123
+      volumes:
+          - data:/var/lib/mysql
+
+  vue:
+    build:
+      context: ./
+      dockerfile: client.Dockerfile
+    container_name: vue-frontend
+    volumes:
+      - ./frontend/:/app/
+    ports:
+      - "3000:3000"    
+
+volumes:
+  data:
+
