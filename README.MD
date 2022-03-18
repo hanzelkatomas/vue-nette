@@ -28,4 +28,4 @@ Tzn. struktura:
 - docker-compose.yml
 
 Zapnout kontejnery:
-	- docker-compose up -d
+`docker-compose up -d`
