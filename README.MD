@@ -21,11 +21,11 @@ Pro Vite:
 
 Dockerfile a docker-compose.yml jsou udelane tak, ze frontend a backend jsou rozdelene do stejne jmenujici se slozek
 Tzn. struktura:
-	- frontend
-	- backend
-	- Dockerfile
-	- client.Dockerfile
-	- docker-compose.yml
+- frontend
+- backend
+- Dockerfile
+- client.Dockerfile
+- docker-compose.yml
 
 Zapnout kontejnery:
 	- docker-compose up -d
