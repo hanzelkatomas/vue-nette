@@ -10,11 +10,11 @@ Zprovozneni Nette projektu
 Pro Vite:
 1. Dockerfile: CMD ["npm", "run", "dev"]
 2. package.json je treba upravit takhle:
-"scripts": {
+`"scripts": {
 	"dev": "vite --host",
 	"build": "vue-tsc --noEmit && vite build",
 	"preview": "vite preview"
-},
+},`
 3. npm install mimo docker?
 
 Dockerfile a docker-compose.yml jsou udelane tak, ze frontend a backend jsou rozdelene do stejne jmenujici se slozek
