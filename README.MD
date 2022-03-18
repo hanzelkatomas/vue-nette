@@ -16,6 +16,7 @@ Pro Vite:
 	"build": "vue-tsc --noEmit && vite build",
 	"preview": "vite preview"
 },`
+
 3. npm install mimo docker?
 
 Dockerfile a docker-compose.yml jsou udelane tak, ze frontend a backend jsou rozdelene do stejne jmenujici se slozek
